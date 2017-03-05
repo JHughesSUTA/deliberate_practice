@@ -53,4 +53,24 @@ until position == words2.length do
 end
 p every_other
 
-# 
+# Given the array ["Alphabet", "aardvark", "anarchy", "purple", "apple", "avalanche", "potato"], find the word with the most a's
+a_words = ["Alphabet", "aardvark", "anarchy", "purple", "apple", "avalanche", "potato"]
+count_array = []
+position = 0
+
+a_words.each do |word|
+  word = word.downcase
+  a_count = 0
+  word.each_char do |char|
+    if char ==  "a"
+      a_count += 1 
+    end
+  end
+  count_array << [a_count, word]
+end
+count_array = count_array.sort.reverse
+most_a = count_array[0][1]
+p count_array
+puts most_a
+
+
