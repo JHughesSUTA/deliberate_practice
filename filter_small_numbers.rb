@@ -42,3 +42,15 @@ words = words.map {|word| word.downcase}
 p words
 
 # put every other item into a new string:
+words2 = ["cat", "zero", "random", "tropical", "andromeda", "food", "dean"]
+every_other = []
+position = 0
+until position == words2.length do
+  if position.even? == true
+    every_other << words2[position]
+  end
+  position += 1
+end
+p every_other
+
+# 
