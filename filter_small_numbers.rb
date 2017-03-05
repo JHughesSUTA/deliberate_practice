@@ -32,7 +32,13 @@ numbers_3 = numbers_3.map {|number| number * 2}
 p numbers_3 
 
 # divide numbers in an array in half:
+numbers_4 = [23, 4, 2, 535, 3, 43, 5, 23]
+numbers_4 = numbers_4.map {|number| (number.to_f / 2)}
+p numbers_4
 
 # return lower-case versions of eash string in an array:
+words = ["ALABAMA", "alAsKa", "ARIzoNa", "aRKANsas", "CaLiFoRnIa", "ConnECTICut", "delaWARE", "florida"]
+words = words.map {|word| word.downcase}
+p words
 
 # put every other item into a new string:
